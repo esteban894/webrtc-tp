@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC App</title>
+  </head>
+  <body>
+    <h1>Iniciar tu webcam</h1>
+    <div class="videos">
+      <span class="video">
+        <h2>Local</h2>
+        <video id="webcamVideo" autoplay playsinline></video>
+      </span>
+      <span class="video">
+        <h2>Remoto</h2>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span>
+    </div>
+    <div class="controles">
+      <div class="llamar">
+        <button id="webcamButton">Iniciar webcam</button>
+        <h2>Crear una nueva llamada</h2>
+        <button id="callButton" disabled>Llamar</button>
+      </div>
+      <div class="contestar">
+        <h2>Unirte a una llamada</h2>
+        <input id="callInput" placeholder="Código de llamada" />
+        <button id="copyCodeButton" disabled>Copiar</button>
+        <button id="answerButton" disabled>Responder</button>
+        <!-- <button id="hangupButton" disabled>Colgar</button> -->
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
